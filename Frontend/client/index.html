@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js" defer></script>
+    <script src="./navigation.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_container">
+        <nav class="nav_bar">
+            <ul class="navigation">
+                <div>
+                    <li class="books"><a href="./books.html">Books</a></li>
+                    <li class="authors"><a href="./authors.html">Authors</a></li>
+                </div>
+                <li class="main_menu"><a href="./index.html"><img src="https://i.pinimg.com/564x/70/bd/63/70bd630505578fffc4c873001f89a9e1.jpg" alt="logo"></a></li>
+                <div>
+                    <li class="login">Login</li>
+                    <li class="signup">Signup</li>
+                </div>
+            </ul>
+        </nav>  
+        <div class="modalForSignUp">
+            <div class="for_close">
+                <div class="closeBtn">X</div>
+            </div>
+            <div class="signUpForm">
+                <form class="formToSignup">
+                    <input class="input" id="inputName" type="text" placeholder="Type name">
+                    <input class="input" id="inputSurname" type="text" placeholder="Type surname">
+                    <input class="input" id="inputMail" type="text" placeholder="Enter mail">
+                    <input class="input" id="inputPassword" type="password" placeholder="Enter Password">
+                </form>
+                <button class="btnSignUp">Sign Up</button>
+                <p class="errorCase">This user already exists</p>
+                <p class="succesCase">Welcome</p>
+            </div>
+        </div>
+        <div class="modalForLogin">
+            <div class="for_close">
+                <div class="closeBtnLogin">X</div>
+            </div>
+            <div class="loginForm">
+                <form class="formToLogin">
+                    <input class="input" id="loginMail" type="text" placeholder="Enter mail">
+                    <input class="input" id="loginPassword" type="password" placeholder="Enter Password">
+                </form>
+                <button class="btnLogin">Login</button>
+                <p class="errorCaseForLogin">Invalid input</p>
+                <p class="succesCaseForLogin">Welcome</p>
+            </div>
+        </div>
+
+            <div class="main_book">
+                <div class="bestseller">Best seller book</div>
+                <!-- <div class="image_book">
+                    <img src="./assets/books.jpg" alt="books">
+                </div>
+                <div class="about_book">
+                    <h3 class="book_name"> Name: Salam</h3>
+                    <p class="genre">Genre: Nagil</p>
+                    <p class="author">Author: Salam Aleykum</p>
+                    <p class="publish_date">Publish date: 25.69.69</p>
+                    <p class="price">455$</p>
+                </div> -->
+            </div>
+            <hr>
+
+            <!-- <div class="second_books">
+                <div class="images_bottom_book">
+                    <img src="./assets/books.jpg" alt="">
+                </div>
+                <div class="bottom_left_side">
+                    <h3 class="bottom_book_name"> Name: Salam</h3>
+                    <p class="bottom_genre">Genre: Nagil</p>
+                    <p class="bottom_author">Author: Salam Aleykum</p>
+                    <p class="bottom_publish_date">Publish date: 25.69.69</p>
+                    <p class="bottom_price">455$</p>
+                </div>
+                <div class="images_bottom_book">
+                    <img src="./assets/books.jpg" alt="">
+                </div>
+                <div class="bottom_left_side">
+                    <h3 class="bottom_book_name"> Name: Salam</h3>
+                    <p class="bottom_genre">Genre: Nagil</p>
+                    <p class="bottom_author">Author: Salam Aleykum</p>
+                    <p class="bottom_publish_date">Publish date: 25.69.69</p>
+                    <p class="bottom_price">455$</p>
+                </div>
+                
+            </div> -->
+
+            <section>
+                <div class="top_books">
+                    <h3 class="allbook">TOP SELLING BOOKS</h3>
+                    <div class="top_selling">
+                        <!-- <div class="divbook">
+                            <img class="divbookimg" src="https://imusic.b-cdn.net/images/item/original/822/9781788701822.jpg?robert-lacey-2020-the-crown-the-official-history-behind-the-hit-netflix-series-political-scandal-personal-struggle-and-the-years-that-defined-elizabeth-ii-1956-1977-paperback-book&class=scaled" alt="">
+                            <h3 class="divbookh3">The Crown</h3>
+                            <p class="divbookp"><span class="divbooksp">By</span>Robert Lacey</p>
+                            <p class="divbookprice">$30</p>
+                        </div> -->
+                    </div>
+    
+                </div>
+    
+            </section>
+            
+            <hr>
+            <section>
+                <div class="authors_list">
+                    <h3 class="author">AUTHORS</h3>
+                    <div class="authors_list_api">
+                        <!-- <div class="sec3div">
+                           
+                            <img class="sec3img" src="https://media.npr.org/assets/img/2016/02/19/ap_844183792565_custom-2eaad7c41a5ffb8a78675aacbeca542c5761dfba-s1100-c50.jpg" alt="">
+                            <p class="sec3p">Harper Lee</p>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+    
+    
+    
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>company</h4>
+                            <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">our services</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">affiliate program</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">shipping</a></li>
+                                <li><a href="#">returns</a></li>
+                                <li><a href="#">order status</a></li>
+                                <li><a href="#">payment options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    
+    </div>
+</body>
+</html>

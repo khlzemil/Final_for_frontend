@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styledashh.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+        integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="./dashboard.js" defer></script>
+    <script src="./navigation.js" defer></script>
+
+</head>
+
+<body>
+    <div class="dashwrapper">
+        <nav class="navigation">
+            <div class="logodiv">
+                <a href="./index.html"><img class="logo"
+                        src="https://i.pinimg.com/564x/70/bd/63/70bd630505578fffc4c873001f89a9e1.jpg"
+                        alt="logo"></a>
+            </div>
+            <div class="infodiv">
+                 <div class="bookss"><a class="books" href="./books.html">Books</a></div>
+                 <div><a class="authors" href="./authors.html">Authors</a></div>
+                 <div class="login">Login</div>
+            </div>
+         
+        </nav>
+        <div>
+            <img class="spinnerR" src="../assets/Spinner-1s-200px.svg" alt="">
+
+            <h3 class="allbook">DASHBOARD</h3>
+            
+            <div class="dashelem">
+                <p class="dashelemp" id="booksdisplay">Books</p>
+                <p class="dashelemp" id="authordisplay">Authors</p>
+                <p class="dashelemp" id="usersdisplay">Users</p>
+            </div>
+            <div>
+                <table class="users-table" border="1">
+                    <thead>
+                        <tr>
+                            <td class="td">#id</td>
+                            <td class="td">Name</td>
+                            <td class="td">Surname</td>
+                            <td class="td">Email</td>
+                            <td class="td">Password</td>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body-users">
+
+                    </tbody>
+            </div>
+            <div>
+                <table class="books-tablee" border="1">
+                    <thead>
+                        <tr>
+                            <td class="td">#id</td>
+                            <td class="td">Title</td>
+                            <td class="td">Author</td>
+                            <td class="td">Price</td>
+                            <td class="td">Genre</td>
+                            <td class="td">BookCover</td>
+                            <td class="td lasttd ">+</td>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <table class="authors-tablee" border="1">
+                    <thead>
+                        <tr>
+                            <td class="td">#id</td>
+                            <td class="td">Name Surname</td>
+                            <td class="td">Biography</td>
+                            <td class="td">ImageUrl</td>
+                            <td class="td lasttdd">+</td>
+                        </tr>
+                    </thead>
+                    <tbody class="authors-table-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

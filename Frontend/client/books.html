@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./navigation.js" defer></script>
+    <script src="./script.js" defer></script>
+    <script src="./books.js" defer></script>
+</head>
+<body>
+    <nav>
+    <ul class="navigation">
+            <a href="./index.html"><img class="logo"
+                    src="https://i.pinimg.com/564x/70/bd/63/70bd630505578fffc4c873001f89a9e1.jpg"
+                    alt="logo"></a>
+        <div class="infodiv">
+            <div>
+                <li class="books"><a href="./books.html">Books</a></li>
+                <li class="authors"><a href="./authors.html">Authors</a></li>
+            </div>
+      
+             <div>
+                <li class="login">Login</li>
+                <li class="signup">Signup</li>
+            </div>
+        </div>
+        
+        <!-- <p>turalhi@code.edu.az</p>
+        <div><a class="dash" href="./dashboard.html">DashBoard</a></div>
+        <div>Log out</div> -->
+        </ul>
+    </nav>
+    <div class="modalForSignUp">
+        <div class="for_close">
+            <div class="closeBtn">X</div>
+        </div>
+        <div class="signUpForm">
+            <form class="formToSignup">
+                <input class="input" id="inputName" type="text" placeholder="Type name">
+                <input class="input" id="inputSurname" type="text" placeholder="Type surname">
+                <input class="input" id="inputMail" type="text" placeholder="Enter mail">
+                <input class="input" id="inputPassword" type="password" placeholder="Enter Password">
+            </form>
+            <button class="btnSignUp">Sign Up</button>
+            <p class="errorCase">This user already exists</p>
+            <p class="succesCase">Welcome</p>
+        </div>
+    </div>
+    <div class="modalForLogin">
+        <div class="for_close">
+            <div class="closeBtnLogin">X</div>
+        </div>
+        <div class="loginForm">
+            <form class="formToLogin">
+                <input class="input" id="loginMail" type="text" placeholder="Enter mail">
+                <input class="input" id="loginPassword" type="password" placeholder="Enter Password">
+            </form>
+            <button class="btnLogin">Login</button>
+            <p class="errorCaseForLogin">Invalid input</p>
+            <p class="succesCaseForLogin">Welcome</p>
+        </div>
+    </div>
+    <div class="books-main">
+        <h3 class="allbook">All Books</h3>
+
+        <div class="book-wrapper">
+            <!-- <div class="book-second">
+                <div class="bookinfo">
+                    <div >
+                        <img class="left2" src="http://prodimage.images-bn.com/pimages/9781499369748_p0_v3_s1200x630.jpg" alt="">
+                    </div>
+                    <div class="right2">
+                        <div class="divname" >Pride and Prejudice</div>
+                        <div class="divauthor"><span class="by">By</span>Jane Austen</div>
+                        <div class="spoiler">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet velit quis, pariatur mollitia numquam quibusdam possimus perspiciatis delectus asperiores reprehenderit, beatae expedita quaerat, quasi eius consequatur? Quos deleniti architecto alias!</div>
+                    </div>
+                </div>
+            </div> -->
+    
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
